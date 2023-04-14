@@ -13,51 +13,57 @@
             <img src="#" alt="a curly hair brown person smiling" class="head-picture"> <!-- change later -->
             <h1 class="head-name">Fernando (Ale) Pajón</h1>
             <h3 class="head-pronouns">she/her</h2>
-            <h2 class="head-general-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odio ex earum quod accusantium alias suscipit. Ipsa quo officiis, atque accusantium praesentium molestias eligendi distinctio perspiciatis. Accusantium vitae officiis doloribus!</h1>
+            <h3 class="head-ubication">Ciudad de Buenos Aires, Argentina</h3>
+            <div class="contact-container"> <!-- map-container -->
+                <h3 class="contact-item"> <i></i> Lorem</h3>
+            </div>
+            <h2 class="head-general-description">{data.generalDescription}</h1>
         </div>
     </header>
     <main>
 
         <section class="main-about-me">
             <div class="about-me">
-                <p class="about-me-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quam perferendis inventore repudiandae distinctio illum aspernatur error, nisi neque nostrum rem explicabo molestiae similique aliquam! Velit illum ipsam enim placeat.</p>
+                <p class="about-me-text">{data.aboutMe}</p>
             </div>
             <div class="abouts-wrapper">
                 <div class="main-abouts">
-                    <h3 class="abouts-title">Lorem </h3>
-                    <i></i> <!-- logo -->
-                    <p class="abouts-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non voluptatem id, sint, molestias beatae delectus accusamus rerum fuga necessitatibus animi qui? Voluptate, officiis explicabo. Dolorem ipsum laborum recusandae sapiente.</p>
+                    <h3 class="abouts-title">{data.abouts[0].name}</h3>
+                    <i class={data.abouts[0].icon}/> <!-- logo -->
+                    <p class="abouts-text">{data.abouts[0].content}</p>
                 </div>
                 <div class="main-abouts">
-                    <h3 class="abouts-title">Lorem</h3>
-                    <i></i> <!-- logo -->
-                    <p class="abouts-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut mollitia quibusdam unde, placeat blanditiis deleniti laboriosam reprehenderit cumque officiis dolore consequuntur vero molestiae minima id ipsum necessitatibus ratione nemo. Voluptas.</p>
+                    <h3 class="abouts-title">{data.abouts[1].name}</h3>
+                    <i class={data.abouts[1].icon}/> <!-- logo -->
+                    <p class="abouts-text">{data.abouts[1].content}</p>
                 </div>
                 <div class="main-abouts">
-                    <h3 class="abouts-title">Lorem</h3>
-                    <i></i> <!-- logo -->
-                    <p class="abouts-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum totam incidunt voluptas ea tempora quidem, dolores saepe et dolorem illo eligendi nemo harum molestiae porro vitae unde ducimus dignissimos omnis.</p>
+                    <h3 class="abouts-title">{data.abouts[2].name}</h3>
+                    <i class={data.abouts[2].icon}/> <!-- logo -->
+                    <p class="abouts-text">{data.abouts[2].content}</p>
                 </div>
         </div>
         </section>
         <section class="main-knowledge">
-            <h3 class="main-title">technologies</h3>
+            <h3 class="main-title">Technologies</h3>
+            
             <section class="knowledge-technologies">
                 <div class="technologies-wrapper">
                     <div class="technologies-item">
-                        <i></i> <!-- tech logo -->
-                        <h4 class="technology-name">Lorem</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tenetur vitae, exercitationem alias iure maxime quas dolore consequuntur? Sint cumque velit repudiandae perspiciatis, obcaecati nesciunt accusamus explicabo vel. Reiciendis, accusamus.</p>
-                    </div>
-                    <div class="technologies-item">
-                        <i></i> <!-- tech logo -->
-                        <h4 class="technology-name">Lorem</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tenetur vitae, exercitationem alias iure maxime quas dolore consequuntur? Sint cumque velit repudiandae perspiciatis, obcaecati nesciunt accusamus explicabo vel. Reiciendis, accusamus.</p>
-                    </div>
-                    <div class="technologies-item">
-                        <i></i> <!-- tech logo -->
-                        <h4 class="technology-name">Lorem</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tenetur vitae, exercitationem alias iure maxime quas dolore consequuntur? Sint cumque velit repudiandae perspiciatis, obcaecati nesciunt accusamus explicabo vel. Reiciendis, accusamus.</p>
+                        <i class={data.technologies[0].icon}></i> <!-- tech logo -->
+                        <h4 class="technology-name">{data.technologies[0].name}</h4>
+                        <div class="technology-meter"> <!-- add a function to paint -->
+                            <div class="technology-item-painted"></div>
+                            <div class="technology-item-empty"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -66,21 +72,9 @@
                 <div class="certification-wrapper">
                     <div class="certification-item">
                         <i></i> <!-- cert logo -->
-                        <h4 class="certification-name">Lorem</h4>
-                        <h4 class="certification-status"></h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tenetur vitae, exercitationem alias iure maxime quas dolore consequuntur? Sint cumque velit repudiandae perspiciatis, obcaecati nesciunt accusamus explicabo vel. Reiciendis, accusamus.</p>
-                    </div>
-                    <div class="certification-item">
-                        <i></i> <!-- cert logo -->
-                        <h4 class="certification-name">Lorem</h4>
-                        <h4 class="certification-status"></h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tenetur vitae, exercitationem alias iure maxime quas dolore consequuntur? Sint cumque velit repudiandae perspiciatis, obcaecati nesciunt accusamus explicabo vel. Reiciendis, accusamus.</p>
-                    </div>
-                    <div class="certification-item">
-                        <i></i> <!-- cert logo -->
-                        <h4 class="certification-name">Lorem</h4>
-                        <h4 class="certification-status"></h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tenetur vitae, exercitationem alias iure maxime quas dolore consequuntur? Sint cumque velit repudiandae perspiciatis, obcaecati nesciunt accusamus explicabo vel. Reiciendis, accusamus.</p>
+                        <h4 class="certification-name">{data.certifications[0].name}</h4>
+                        <h4 class="certification-status">>{data.certifications[0].status}</h4>
+                        <p class="certification-content">{data.certifications[0].content}</p>
                     </div>
                 </div>
             </section>
@@ -90,9 +84,28 @@
                 <div class="experience-item">
                     <i></i> <!-- logo -->
                     <h4 class="experience-place-name">Lorem</h4>
-                    <p class="experience-summary"></p>
+                    <p class="experience-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, praesentium. Corporis labore alias deleniti culpa cupiditate sequi unde temporibus a autem, ea mollitia officia, eligendi dolore. Optio, perspiciatis odit. Incidunt!</p>
                     <div class="experience-tokens">
-                        <p class="experience-token"></p>
+                        <p class="experience-token">Lorem</p>
+                        <p class="experience-token">Lorem</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <i></i> <!-- logo -->
+                    <h4 class="experience-place-name">Lorem</h4>
+                    <p class="experience-summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis amet aperiam quis debitis nobis. Saepe, aliquid magni eveniet est, amet quaerat neque cumque vero voluptatibus ad, ipsam labore nostrum perspiciatis.</p>
+                    <div class="experience-tokens">
+                        <p class="experience-token">Lorem</p>
+                        <p class="experience-token">Lorem</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <i></i> <!-- logo -->
+                    <h4 class="experience-place-name">Lorem</h4>
+                    <p class="experience-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsum exercitationem temporibus totam cum incidunt, accusamus illo sequi vitae tenetur ratione laboriosam culpa inventore minus perferendis nisi numquam eveniet nam.</p>
+                    <div class="experience-tokens">
+                        <p class="experience-token">Lorem</p>
+                        <p class="experience-token">Lorem</p>
                     </div>
                 </div>
             </div>
@@ -100,7 +113,7 @@
         
     </main>
     <footer>
-
+        <p>Please send your feedback <a href="mailto:alejandrabotacura@outlook.com.ar?subject=Resume%20Feedback">Here!</a></p>
     </footer>
 </body>
 </html>
