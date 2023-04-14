@@ -33,6 +33,16 @@ const abouts=[
     },
 
 ]
+const lenguages=[
+    {
+        name:"Spanish",
+        level:"Native", 
+    },
+    {
+        name:"English",
+        level:"Fluid", 
+    }
+]
 const technologies=[
     {
         name:"JavaScript",
