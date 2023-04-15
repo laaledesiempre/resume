@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ale's Resume</title>
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <img src="#" alt="description" class="head-banner"><!-- change later -->
+            <img src="#" alt="a curly hair brown person smiling" class="head-picture"> <!-- change later -->
+            <h1 class="head-name">Fernando (Ale) Pajón</h1>
+            <h3 class="head-pronouns">she/her</h2>
+            <h3 class="head-ubication">Ciudad de Buenos Aires, Argentina</h3>
+            <div class="contact-container"> <!-- map-container -->
+                <h3 class="contact-item"> <i></i> Lorem</h3>
+            </div>
+            <h2 class="head-general-description">{data.generalDescription}</h1>
+        </div>
+    </header>
+    <main>
+
+        <section class="main-about-me">
+            <div class="about-me">
+                <p class="about-me-text">{data.aboutMe}</p>
+            </div>
+            <div class="abouts-wrapper">
+                <div class="main-abouts">
+                    <h3 class="abouts-title">{data.abouts[0].name}</h3>
+                    <i class={data.abouts[0].icon}/> <!-- logo -->
+                    <p class="abouts-text">{data.abouts[0].content}</p>
+                </div>
+                <div class="main-abouts">
+                    <h3 class="abouts-title">{data.abouts[1].name}</h3>
+                    <i class={data.abouts[1].icon}/> <!-- logo -->
+                    <p class="abouts-text">{data.abouts[1].content}</p>
+                </div>
+                <div class="main-abouts">
+                    <h3 class="abouts-title">{data.abouts[2].name}</h3>
+                    <i class={data.abouts[2].icon}/> <!-- logo -->
+                    <p class="abouts-text">{data.abouts[2].content}</p>
+                </div>
+        </div>
+        </section>
+        <section class="main-knowledge">
+            <h3 class="main-title">Lenguages</h3>
+            <div class="lenguages-wraper">
+                <div class="lenguage-item">
+                    <h4 class="lenguage-title">{data.lenguages[0].name}</h4>
+                    <h5 class="lenguage-level">{data.lenguages[0].level}</h5>
+                </div>
+            </div>
+            <h3 class="main-title">Technologies</h3>
+            
+            <section class="knowledge-technologies">
+                <div class="technologies-wrapper">
+                    <div class="technologies-item">
+                        <i class={data.technologies[0].icon}></i> <!-- tech logo -->
+                        <h4 class="technology-name">{data.technologies[0].name}</h4>
+                        <div class="technology-meter"> <!-- add a function to paint -->
+                            <div class="technology-item-painted"></div>
+                            <div class="technology-item-empty"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                            <div class="technology-item"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="knowledge-certification">
+                <h3 class="main-title">Certifications</h3>
+                <div class="certification-wrapper">
+                    <div class="certification-item">
+                        <i></i> <!-- cert logo -->
+                        <h4 class="certification-name">{data.certifications[0].name}</h4>
+                        <h4 class="certification-status">>{data.certifications[0].status}</h4>
+                        <p class="certification-content">{data.certifications[0].content}</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="experience">
+            <div class="experience-stack">
+                <div class="experience-item">
+                    <i></i> <!-- logo -->
+                    <h4 class="experience-place-name">Lorem</h4>
+                    <p class="experience-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, praesentium. Corporis labore alias deleniti culpa cupiditate sequi unde temporibus a autem, ea mollitia officia, eligendi dolore. Optio, perspiciatis odit. Incidunt!</p>
+                    <div class="experience-tokens">
+                        <p class="experience-token">Lorem</p>
+                        <p class="experience-token">Lorem</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <i></i> <!-- logo -->
+                    <h4 class="experience-place-name">Lorem</h4>
+                    <p class="experience-summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis amet aperiam quis debitis nobis. Saepe, aliquid magni eveniet est, amet quaerat neque cumque vero voluptatibus ad, ipsam labore nostrum perspiciatis.</p>
+                    <div class="experience-tokens">
+                        <p class="experience-token">Lorem</p>
+                        <p class="experience-token">Lorem</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <i></i> <!-- logo -->
+                    <h4 class="experience-place-name">Lorem</h4>
+                    <p class="experience-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsum exercitationem temporibus totam cum incidunt, accusamus illo sequi vitae tenetur ratione laboriosam culpa inventore minus perferendis nisi numquam eveniet nam.</p>
+                    <div class="experience-tokens">
+                        <p class="experience-token">Lorem</p>
+                        <p class="experience-token">Lorem</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Please send your feedback <a href="mailto:alejandrabotacura@outlook.com.ar?subject=Resume%20Feedback">Here!</a></p>
+    </footer>
+</body>
+</html>
