@@ -1,5 +1,7 @@
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+    <p>Please send your feedback <a href="mailto:alejandrabotacura@outlook.com.ar?subject=Resume%20Feedback">Here!</a></p>
+</footer>
   )
 }
